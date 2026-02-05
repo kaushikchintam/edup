@@ -1,0 +1,256 @@
+/* Retrain page specific */
+
+.rtHero{
+  padding: 92px 0 70px;
+  min-height: 650px; /* gives that big airy hero spacing like your screenshot */
+}
+
+.rtTitle{
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  font-size: clamp(58px, 6.6vw, 104px);
+}
+
+.rtLead{
+  margin: 26px 0 0;
+  color: rgba(11,11,11,0.62);
+  font-weight: 650;
+  font-size: 20px;
+  line-height: 1.45;
+  max-width: 70ch;
+}
+
+.rtBullets{
+  margin-top: 32px;
+  display: flex;
+  gap: 34px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: rgba(11,11,11,0.62);
+}
+
+.rtBullet{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 650;
+  font-size: 16px;
+}
+
+.rtBulletIcon{
+  width: 20px;
+  height: 20px;
+  display: inline-grid;
+  place-items: center;
+}
+
+/* Section title */
+.rtCareers{
+  padding: 70px 0 70px;
+}
+
+.rtSectionTitle{
+  margin: 0 0 28px;
+  font-size: clamp(40px, 4.2vw, 56px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+/* Career grid */
+.rtGrid{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+@media (max-width: 980px){
+  .rtGrid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .rtHero{ min-height: auto; padding-bottom: 36px; }
+}
+@media (max-width: 640px){
+  .rtGrid{ grid-template-columns: 1fr; }
+}
+
+.rtCard{
+  border-radius: 28px;
+  padding: 34px;
+  min-height: 320px;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.07);
+  position: relative;
+  overflow: hidden;
+}
+
+.rtCardIcon{
+  color: rgba(11,11,11,0.9);
+}
+
+.rtCardTitle{
+  margin: 18px 0 0;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.rtCardDesc{
+  margin: 10px 0 0;
+  color: rgba(11,11,11,0.62);
+  font-weight: 650;
+  line-height: 1.5;
+  font-size: 16px;
+  max-width: 42ch;
+}
+
+.rtMetaRow{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 18px;
+  color: rgba(11,11,11,0.62);
+  font-weight: 700;
+}
+
+.rtTags{
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.rtTag{
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.45);
+  border: 1px solid rgba(11,11,11,0.08);
+  font-weight: 800;
+  font-size: 13px;
+  color: rgba(11,11,11,0.78);
+}
+
+.rtStartBtn{
+  margin-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.75);
+  font-weight: 900;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
+  width: fit-content;
+}
+
+.rtArrow{ font-weight: 900; }
+
+/* Tones (match screenshot palette vibe) */
+.toneOrangeSoft{ background: #ea8c74; }
+.toneGreenSoft{ background: #b5de83; }
+.tonePurpleSoft{ background: #d4b2ef; }
+.toneTealSoft{ background: #a9e6d1; }
+.tonePeachSoft{ background: #f0c49b; }
+
+/* Quiz CTA */
+.rtQuiz{
+  margin: 46px 0 0;
+  padding: 92px 0 92px;
+  text-align: center;
+}
+
+.rtQuizTitle{
+  margin: 0;
+  font-size: clamp(34px, 3.7vw, 54px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.rtQuizSub{
+  margin: 14px auto 0;
+  max-width: 70ch;
+  color: rgba(11,11,11,0.6);
+  font-weight: 650;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.rtQuizBtn{
+  margin-top: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 26px;
+  border-radius: 999px;
+  background: radial-gradient(120% 120% at 30% 20%, #2b2b2b 0%, #0b0b0b 70%);
+  color: #fff;
+  font-weight: 900;
+  box-shadow: 0 26px 70px rgba(0,0,0,0.24);
+}
+
+/* --- Floating / pop interaction (Cards + Buttons) --- */
+
+/* Card base */
+.rtCard{
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    filter 180ms ease;
+  will-change: transform;
+  cursor: pointer;
+}
+
+/* Lift on hover and keyboard focus (focus-within covers the link inside the card) */
+.rtCard:hover,
+.rtCard:focus-within{
+  transform: translateY(-8px);
+  box-shadow: 0 34px 90px rgba(0,0,0,0.12);
+  filter: saturate(1.02);
+}
+
+/* Press (mouse down / tap) */
+.rtCard:active{
+  transform: translateY(-3px) scale(0.99);
+  box-shadow: 0 26px 70px rgba(0,0,0,0.10);
+}
+
+/* Button base */
+.rtStartBtn{
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    background 160ms ease;
+  will-change: transform;
+}
+
+/* Lift on hover / focus */
+.rtStartBtn:hover,
+.rtStartBtn:focus-visible{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+/* Press down on click/tap */
+.rtStartBtn:active{
+  transform: translateY(0px) scale(0.98);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+}
+
+/* Optional: make the arrow feel responsive */
+.rtStartBtn .rtArrow{
+  transition: transform 160ms ease;
+}
+.rtStartBtn:hover .rtArrow{
+  transform: translateX(4px);
+}
+.rtStartBtn:active .rtArrow{
+  transform: translateX(2px);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .rtCard, .rtStartBtn, .rtStartBtn .rtArrow{
+    transition: none !important;
+  }
+}
+

@@ -1,0 +1,247 @@
+/* Change Career page specific */
+
+.ccHero{
+  padding: 92px 0 70px;
+  min-height: 650px;
+}
+
+.ccHeroTitle{
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  font-size: clamp(62px, 7vw, 108px);
+}
+
+.ccHeroLead{
+  margin: 22px 0 0;
+  max-width: 78ch;
+  color: rgba(11,11,11,0.62);
+  font-weight: 650;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.ccHeroBullets{
+  margin-top: 28px;
+  display: flex;
+  gap: 26px;
+  flex-wrap: wrap;
+  align-items: center;
+  color: rgba(11,11,11,0.62);
+  font-weight: 700;
+}
+
+.ccBullet{
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+}
+.ccBulletIcon{
+  width: 20px;
+  height: 20px;
+  display: inline-grid;
+  place-items: center;
+}
+
+/* Section heading */
+.ccAreas{
+  padding: 60px 0 40px;
+}
+.ccSectionTitle{
+  margin: 0;
+  font-size: clamp(42px, 4.4vw, 58px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+.ccSectionSub{
+  margin: 10px 0 0;
+  color: rgba(11,11,11,0.56);
+  font-weight: 650;
+  font-size: 18px;
+}
+
+/* Grid of cards */
+.ccGrid{
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+@media (max-width: 860px){
+  .ccGrid{ grid-template-columns: 1fr; }
+  .ccHero{ min-height: auto; padding-bottom: 30px; }
+}
+
+/* Cards */
+.ccCard{
+  border-radius: 28px;
+  padding: 30px;
+  min-height: 250px;
+  box-shadow: 0 24px 70px rgba(0,0,0,0.07);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+  cursor: pointer;
+  outline: none;
+}
+.ccCard:hover,
+.ccCard:focus{
+  transform: translateY(-8px);
+  box-shadow: 0 34px 90px rgba(0,0,0,0.12);
+  filter: saturate(1.02);
+}
+.ccCard:active{
+  transform: translateY(-3px) scale(0.99);
+}
+
+.ccIcon{ opacity: 0.9; }
+
+.ccTitle{
+  margin: 14px 0 0;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+}
+
+.ccDesc{
+  margin: 10px 0 0;
+  color: rgba(11,11,11,0.62);
+  font-weight: 650;
+  line-height: 1.5;
+}
+
+.ccChips{
+  margin-top: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.ccChip{
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.45);
+  border: 1px solid rgba(11,11,11,0.08);
+  font-weight: 800;
+  font-size: 13px;
+  color: rgba(11,11,11,0.78);
+}
+
+/* Button inside cards */
+.ccBtn{
+  margin-top: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.75);
+  font-weight: 900;
+  width: fit-content;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
+}
+.ccBtn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+.ccBtn:active{
+  transform: translateY(0px) scale(0.98);
+}
+
+/* How we help */
+.ccHelp{
+  margin-top: 34px;
+  padding: 86px 0 60px;
+  text-align: center;
+}
+.ccHelpTitle{
+  margin: 0;
+  font-size: clamp(40px, 4.6vw, 64px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.ccSteps{
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  align-items: start;
+}
+@media (max-width: 860px){
+  .ccSteps{ grid-template-columns: 1fr; }
+}
+
+.ccStepNum{
+  width: 62px;
+  height: 62px;
+  border-radius: 999px;
+  margin: 0 auto 14px;
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 20px;
+  color: white;
+}
+
+.ccCyan{ background: #2fd6c7; }
+.ccOrange{ background: #ff8d3a; }
+.ccPurple{ background: #8f3eea; }
+
+.ccStepTitle{
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+
+.ccStepDesc{
+  margin-top: 10px;
+  color: rgba(11,11,11,0.55);
+  font-weight: 650;
+  line-height: 1.5;
+  max-width: 34ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* CTA */
+.ccCta{
+  padding: 80px 0 110px;
+  text-align: center;
+}
+.ccCtaTitle{
+  margin: 0;
+  font-size: clamp(42px, 4.8vw, 66px);
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+.ccCtaSub{
+  margin: 14px 0 0;
+  color: rgba(11,11,11,0.56);
+  font-weight: 650;
+  font-size: 18px;
+}
+
+.ccCtaBtn{
+  margin-top: 26px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 26px;
+  border-radius: 999px;
+  background: radial-gradient(120% 120% at 30% 20%, #2b2b2b 0%, #0b0b0b 70%);
+  color: #fff;
+  font-weight: 900;
+  box-shadow: 0 26px 70px rgba(0,0,0,0.24);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+.ccCtaBtn:hover{ transform: translateY(-3px); }
+.ccCtaBtn:active{ transform: translateY(0px) scale(0.98); }
+
+.ccArrow{ font-weight: 900; }
+
+/* same tones used elsewhere */
+.toneOrangeSoft{ background: #ea8c74; }
+.toneGreenSoft{ background: #b5de83; }
+.tonePurpleSoft{ background: #d4b2ef; }
+.toneTealSoft{ background: #a9e6d1; }
