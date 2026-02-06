@@ -1,4 +1,4 @@
-£ EdUp 🚀
+EdUp 🚀
 
 EdUp is a career transformation platform for people who want to **retrain**, **change careers**, or **accelerate career growth**.  
 This repo contains the frontend built with **Vite + React** and a demo-style progress system used for showcasing the product without a backend.
