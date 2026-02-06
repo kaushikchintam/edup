@@ -131,7 +131,6 @@ export default function Home() {
         </div>
       </header>
 
-      {/* HERO */}
       <main className="container">
         <section className="hero">
           <div className="heroPill">
@@ -149,7 +148,7 @@ export default function Home() {
             starts here
           </h1>
 
-          {/* ✅ UPDATED: all 3 buttons are now in the same container */}
+        
           <div className="heroButtons">
             <PillButton to="/retrain" variant="dark">
               I want to retrain
@@ -163,7 +162,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* SECTION: stats */}
+        
         <section className="mid">
           <div className="divider" />
           <div className="stats">
@@ -176,7 +175,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* FEATURES */}
+        
         <section className="features">
           <h2 className="sectionTitle">What you get with EdUp</h2>
           <p className="sectionSub">
@@ -224,7 +223,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* TRUST + CTA */}
+        
         <section className="trust">
           <div className="trustTop">
             <div className="trustLeft">
@@ -250,7 +249,7 @@ export default function Home() {
         </section>
       </main>
 
-      {/* FOOTER */}
+      
       <footer className="footer">
         <div className="container footerTop">
           <div className="footerBrand">

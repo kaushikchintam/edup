@@ -1,8 +1,8 @@
-/* Retrain page specific */
+
 
 .rtHero{
   padding: 92px 0 70px;
-  min-height: 650px; /* gives that big airy hero spacing like your screenshot */
+  min-height: 650px; 
 }
 
 .rtTitle{
@@ -145,7 +145,7 @@
 
 .rtArrow{ font-weight: 900; }
 
-/* Tones (match screenshot palette vibe) */
+
 .toneOrangeSoft{ background: #ea8c74; }
 .toneGreenSoft{ background: #b5de83; }
 .tonePurpleSoft{ background: #d4b2ef; }
@@ -188,7 +188,7 @@
   box-shadow: 0 26px 70px rgba(0,0,0,0.24);
 }
 
-/* --- Floating / pop interaction (Cards + Buttons) --- */
+
 
 /* Card base */
 .rtCard{
@@ -200,7 +200,7 @@
   cursor: pointer;
 }
 
-/* Lift on hover and keyboard focus (focus-within covers the link inside the card) */
+
 .rtCard:hover,
 .rtCard:focus-within{
   transform: translateY(-8px);
@@ -208,13 +208,13 @@
   filter: saturate(1.02);
 }
 
-/* Press (mouse down / tap) */
+
 .rtCard:active{
   transform: translateY(-3px) scale(0.99);
   box-shadow: 0 26px 70px rgba(0,0,0,0.10);
 }
 
-/* Button base */
+
 .rtStartBtn{
   transition:
     transform 160ms ease,
@@ -223,20 +223,20 @@
   will-change: transform;
 }
 
-/* Lift on hover / focus */
+
 .rtStartBtn:hover,
 .rtStartBtn:focus-visible{
   transform: translateY(-3px);
   box-shadow: 0 18px 40px rgba(0,0,0,0.12);
 }
 
-/* Press down on click/tap */
+
 .rtStartBtn:active{
   transform: translateY(0px) scale(0.98);
   box-shadow: 0 10px 24px rgba(0,0,0,0.10);
 }
 
-/* Optional: make the arrow feel responsive */
+
 .rtStartBtn .rtArrow{
   transition: transform 160ms ease;
 }
@@ -247,7 +247,7 @@
   transform: translateX(2px);
 }
 
-/* Respect reduced motion */
+
 @media (prefers-reduced-motion: reduce){
   .rtCard, .rtStartBtn, .rtStartBtn .rtArrow{
     transition: none !important;

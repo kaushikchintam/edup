@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "../styles/home.css";          // reuse your navbar/footer/base
-import "../styles/changeCareer.css";  // page-specific
+import "../styles/home.css";          
+import "../styles/changeCareer.css"; 
 import Logo from "../components/Logo";
 
 <Logo />

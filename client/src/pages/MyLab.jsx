@@ -70,9 +70,7 @@ function ProgressRing({ value = 0 }) {
   );
 }
 
-/* ===========================
-   Tile Icons
-   =========================== */
+
 
 function IconBook() {
   return (
@@ -254,7 +252,7 @@ export default function MyLab() {
 
   return (
     <div className="page">
-      {/* NAV */}
+      
       <header className="nav">
         <div className="container navInner">
           <Logo />
@@ -277,7 +275,7 @@ export default function MyLab() {
       </header>
 
       <main className="container mlMain">
-        {/* Header */}
+        
         <section className="mlTop">
           <div>
             <div className="mlWelcome">{data.user.greeting}</div>
@@ -296,7 +294,7 @@ export default function MyLab() {
 
         <div className="mlDivider" />
 
-        {/* Tiles + Two column layout */}
+        
         <section className="mlGrid">
           <div className="mlLeft">
             <div className="mlTiles">
@@ -305,7 +303,7 @@ export default function MyLab() {
               ))}
             </div>
 
-            {/* Resources */}
+            
             <div className="mlCard">
               <div className="mlCardHead">
                 <div className="mlCardTitle">Your Resources</div>
@@ -325,7 +323,7 @@ export default function MyLab() {
               </div>
             </div>
 
-            {/* Timeline */}
+            
             <div className="mlCard">
               <div className="mlCardHead">
                 <div className="mlCardTitle">Application Timeline</div>
@@ -355,7 +353,7 @@ export default function MyLab() {
           </div>
 
           <div className="mlRight">
-            {/* Upcoming sessions */}
+            
             <div className="mlCard">
               <div className="mlCardHead">
                 <div className="mlCardTitle">Upcoming Sessions</div>
@@ -393,7 +391,7 @@ export default function MyLab() {
               </button>
             </div>
 
-            {/* This week */}
+            
             <div className="mlCard">
               <div className="mlCardTitle">This Week</div>
               <div className="mlStatRow">
@@ -410,7 +408,7 @@ export default function MyLab() {
               </div>
             </div>
 
-            {/* Funding */}
+            
             <div className="mlFunding">
               <div className="mlFundingTitle">Explore Funding</div>
               <div className="mlFundingDesc">
@@ -424,7 +422,7 @@ export default function MyLab() {
         </section>
       </main>
 
-      {/* FOOTER */}
+      
       <footer className="footer">
         <div className="container footerTop">
           <div className="footerBrand">

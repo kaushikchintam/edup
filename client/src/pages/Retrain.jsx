@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/home.css"; // reuse navbar/footer + base variables from Home
-import "../styles/retrain.css"; // retrain-specific styles
+import "../styles/home.css"; 
+import "../styles/retrain.css"; 
 import Logo from "../components/Logo";
 
 <Logo />
@@ -31,10 +31,7 @@ function Tag({ children }) {
   return <span className="rtTag">{children}</span>;
 }
 
-/**
- * ✅ More stable heart (centered + consistent strokes)
- * This avoids the “wobble” you get from certain path shapes during hover/transform.
- */
+
 function HeartIcon() {
   return (
     <svg
@@ -207,7 +204,7 @@ export default function Retrain() {
           desc: "Support mental health and wellbeing as a therapist",
           duration: "2-4 years typical duration",
           tags: ["BACP accreditation"],
-          // ✅ swapped the “wobbly” heart for a stable one
+          
           icon: <HeartIcon />,
         },
         {
